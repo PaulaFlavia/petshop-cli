@@ -4,16 +4,16 @@ Elas já estão posicionadas no arquivo funcoes.js.
 As demais funções abaixo devem ser criadas como atributo do objeto
 literal que será exportado.
 
-☐ Implemente a função salvar.
+✔ Implemente a função salvar. @done(22-07-01 16:42)
   . Ela precisa salvar o conteúdo da constante cachorros no arquivo database/cachorros.json
   . Ela não precisa receber nenhum parâmetro nem retornar nada.
 
-☐ Implemente a função buscar.
+✔ Implemente a função buscar. @done(22-07-01 16:42)
   . Essa função deve receber como parâmetro o id do cachorro buscado.
   . Essa função deve retornar o cachorro com o id buscado ou emitir um erro
     caso não exista cachorro com o id buscado.
 
-☐ Crie uma função chamada listar
+✔ Crie uma função chamada listar @done(22-07-01 17:00)
   . Essa função deve imprimir no console uma tabela
     com as informações dos cachorros cadastrados.
     Dica: experimente a função console.table

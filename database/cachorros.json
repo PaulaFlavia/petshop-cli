@@ -1,6 +1,6 @@
 [
     {
-        "id":1,
+        "id": 1,
         "nome": "João Grilo",
         "castrado": true,
         "dataDeNascimento": "2020-08-21",
@@ -32,7 +32,7 @@
         ]
     },
     {
-        "id":2,
+        "id": 2,
         "nome": "Gertrudes",
         "castrado": false,
         "dataDeNascimento": "2015-08-10",
@@ -47,7 +47,7 @@
         "servicos": []
     },
     {
-        "id":3,
+        "id": 3,
         "nome": "Bronto",
         "castrado": true,
         "dataDeNascimento": "2016-10-19",
@@ -67,7 +67,7 @@
         ]
     },
     {
-        "id":4,
+        "id": 4,
         "nome": "Ataúlfo",
         "sexo": "m",
         "peso": 10,
@@ -82,7 +82,7 @@
         "servicos": []
     },
     {
-        "id":5,
+        "id": 5,
         "nome": "Godofredo",
         "sexo": "m",
         "castrado": true,
@@ -92,7 +92,7 @@
         "servicos": []
     },
     {
-        "id":6,
+        "id": 6,
         "nome": "Clementina",
         "sexo": "f",
         "castrado": false,
@@ -102,7 +102,7 @@
         "servicos": []
     },
     {
-        "id":7,
+        "id": 7,
         "nome": "Cancelado",
         "sexo": "m",
         "castrado": true,
