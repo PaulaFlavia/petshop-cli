@@ -1,33 +1,16 @@
-const cachorros = require('../database/cachorros.json')
 
-function descrever(idDigitado){
-    function temIdIgualAoDigitado(id){
-         if(idDigitado == cachorros.id){
-            return true;
-         } else if(idDigitado!= cachorros.id){
-            return `Não existe cachorro com o id ${id}`;
-            } else {
-                return false;
-              }
-    }
-            
-         
-     return cachorros.find(idDigitado);
-       
-} 
-console.log(descrever(3));
+const cachorros = require('../database/cachorros.json');
+const buscar = require('./funcoes');
 
-// function buscar(idBuscado)  { 
-//     function temIdIgualAoBuscado(cachorro){
-//      if(cachorro.id === idBuscado){
-//           return  true;
-         
-//      } else {
-//          return false;
-         
-//      }
-//     }
-//      return cachorros.find(temIdIgualAoBuscado);
-       
-//          }
-        
+function descrever(idDigitado) {
+    let cachorro = buscar(idDigitado);  
+    console.log(cachorro);
+
+    // if(cachorro) {
+    //     console.log(cachorro);
+    // } else {
+    //     console.log(`Não existe cachorro com o id ${idDigitado}`);
+    // }
+
+}
+descrever(2);

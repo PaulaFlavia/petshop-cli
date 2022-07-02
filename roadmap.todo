@@ -20,14 +20,14 @@ literal que será exportado.
   . Essa função não deve receber nenhum parâmetro
   . Essa função não deve retornar nada.
 
-☐ Crie uma função chamada descrever
+✔ Crie uma função chamada descrever @done(22-07-02 15:00)
   . Essa deve imprimir todas as informações de um cachorro.
   . Ela deve receber o id do cachorro a ser descrito.
   . Ela não deve retornar nada como parâmetro.
   . Essa função deve imprimir uma mensagem `Não existe cachorro com o id ${id}`
     caso não exista nenhum cachorro com o id passado.
 
-☐ Crie uma função chamada adicionar
+✔ Crie uma função chamada adicionar @done(22-07-02 16:01)
   . Essa função deve adicionar um novo cachorro no arquivo
     de cachorros.
   . Essa função deve receber como parâmetro um objeto literal com os seguintes campos
@@ -44,7 +44,7 @@ literal que será exportado.
   . Salve o array de cachorros em forma de JSON no arquivo
     database/cachorros.json
 
-☐ Crie uma função chamada vacinar.
+✔ Crie uma função chamada vacinar. @done(22-07-02 16:30)
   . Essa função deve adicionar um objeto literal com
     as informações de uma vacina (nome e data da aplicação) no array de vacinas de um cachorro.
   . Ela deve receber três parâmetros *nesta ordem*
@@ -56,7 +56,7 @@ literal que será exportado.
   . Essa função deve imprimir uma mensagem "Cachorro inexistente"
     não exista um cachorro com o id passado.
 
-☐ Crie uma função chamada atribuirServico
+✔ Crie uma função chamada atribuirServico @done(22-07-02 17:08)
   . Essa função deve adicionar um serviço ao array de serviços
     de um cachorro
   . Ela deve receber três parâmetros *nesta ordem*

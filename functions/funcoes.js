@@ -12,28 +12,81 @@ function salvar(cachorro) {
     // console.log('arquivo ' + arquivo);
     // console.log('json ' + json);
 }
-salvar();
+
 
 
 
 
 
  function buscar(idBuscado)  { 
-   function temIdIgualAoBuscado(cachorro){
-    if(cachorro.id == idBuscado){
-         return  true;
-        
+  let cachorro = cachorros.find(cachorro => {
+     return cachorro.id == idBuscado;
+  })
+    if(cachorro) {
+      return cachorro;
     } else {
-        return false;
-        }
-   }
-    return cachorros.find(temIdIgualAoBuscado);
-      
-        }
-       
-    
+      return `Não existe cachorro com o id ${idBuscado}`;
+    }
+  }
+// console.log(buscar(200))
+   
 
-console.log(buscar(3));
+// const cachorros = require('../database/cachorros.json');
+// const buscar = require('./funcoes');
 
- module.exports ={salvar, buscar} 
+function descrever(idDigitado) {
+  let cachorro = buscar(idDigitado);  
 
+  if(cachorro) {
+    console.log(cachorro);
+  } else {
+    console.log(`Não existe cachorro com o id ${idDigitado}`);
+  }
+}
+
+
+//Criando função adicionar 
+let dog = {
+   "nome": "Bob",
+   "sexo": "m",
+   "castrado": false,
+   "dataDeNascimento": "2020-10-12",
+   "peso": 3
+};
+
+function adicionar(dog) {
+  let newDog = dog;
+
+  newDog.id = cachorros.length + 1;
+  newDog.vacinas = [];
+  newDog.servicos = [];
+  cachorros.push(newDog);
+}
+
+function vacinar(id, dadosVacina) {
+  let dadosDoCachorro = buscar(id);
+
+  if(dadosDoCachorro.nome) {  
+    dadosDoCachorro.vacinas.push(dadosVacina);
+  } else {
+    console.log("Animal inexistente");
+  }
+}
+
+function atribuicaoDeServico(id, dadosDoServico) {
+  let dadosDoCachorro = buscar(id);
+  if(dadosDoCachorro.id) {
+    dadosDoCachorro.servicos.push(dadosDoServico)
+  } else {
+    console.log("Animal inexistente");
+  }
+}
+
+function remover(id) {
+  let servicosArray = buscar(id);
+  if(servicosArray.id){
+    servicosArray = [];
+  } else {
+    console.log("Animal inexistente");
+  }
+  }
