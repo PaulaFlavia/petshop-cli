@@ -67,7 +67,7 @@ literal que será exportado.
   . Essa função deve imprimir uma mensagem "Cachorro inexistente"
     não exista um cachorro com o id passado.
 
-☐  Crie uma função chamada remover
+✔  Crie uma função chamada remover @done(22-07-03 11:30)
   . Essa função deve remover um cachorro do array de serviços.
   . Ela deve recber um único parâmetro
     + id  (Id cachorro do cachorro a ser vacinado)
