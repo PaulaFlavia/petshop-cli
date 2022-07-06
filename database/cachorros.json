@@ -1,36 +1,37 @@
 [
-    {
-        "id": 1,
-        "nome": "João Grilo",
-        "castrado": true,
-        "dataDeNascimento": "2020-08-21",
-        "peso": 10,
-        "sexo": "m",
-        "vacinas": [
-            {
-                "nome": "Antirrábica",
-                "data": "2021-06-01"
-            },
-            {
-                "nome": "Giárdia",
-                "data": "2021-06-01"
-            }
-        ],
-        "servicos": [
-            {
-                "nome": "banho",
-                "data": "2021-08-07"
-            },
-            {
-                "nome": "tosa",
-                "data": "2021-08-07"
-            },
-            {
-                "nome": "tosa",
-                "data": "2021-08-07"
-            }
-        ]
+    
+{ 
+    "id": 1,
+    "nome": "João Grilo",
+    "castrado": true,
+    "dataDeNascimento": "2020-08-21",
+    "peso": 10,
+    "sexo": "m",
+    "vacinas": [
+      {
+      "nome": "Antirrábica",
+      "data": "2021-06-01"
+      },
+      {
+      "nome": "Giárdia",
+      "data": "2021-06-01"
+      }
+    ],
+    "servicos": [
+      {
+      "nome": "banho",
+      "data": "2021-08-07"
+      },
+      {
+      "nome": "tosa",
+      "data": "2021-08-07"
+      },
+      {
+      "nome": "tosa",
+      "data": "2021-08-07"}
+      ]
     },
+   
     {
         "id": 2,
         "nome": "Gertrudes",
