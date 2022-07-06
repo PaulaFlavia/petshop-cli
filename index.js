@@ -4,7 +4,7 @@ const acoes = require("./settings/acoes");
 const perguntas = require('./settings/perguntas');
 const funcoes = require('./funcoes');
 
-function funcaoAindaPorDeinir(){
+function funcaoAindaPorDefinir(){
     console.log("Você ainda não definiu essa função.");
 }
 
@@ -31,11 +31,12 @@ function tratarRespostas(respostas) {
 
         case acoes.ADICIONAR:
             funcoes.adicionar(
-                respostas.nomeDoCachorro,
-                respostas.sexoDoCachorro,
-                respostas.cachorroCastrado=="Sim",
-                respostas.dataNascimentoDoCachorro,
-                respostas.pesoDoCachorro
+               { nome: respostas.nomeDoCachorro,
+                 sexo: respostas.sexoDoCachorro,
+                 castrado: respostas.cachorroCastrado=="Sim",
+                 dataDeNascimento: respostas.dataNascimentoDoCachorro,
+                 peso: respostas.pesoDoCachorro
+               }
             );
         break;
 
