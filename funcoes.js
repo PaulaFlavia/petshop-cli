@@ -3,7 +3,7 @@ const cachorros = require('./database/cachorros.json');
 
 const fs = require('fs');
 const path = require('path');
-const { builtinModules } = require('module');
+
 
 let funcoes = {
   salvar: function() {
@@ -40,12 +40,12 @@ let funcoes = {
 
   adicionar:function(dog) {
     let newDog = dog;
-  
-     newDog.id = cachorros.length + 1;
+    let lastDog = cachorros.length;
+     newDog.id = lastDog + 1;
      newDog.vacinas = [];
      newDog.servicos = [];
      cachorros.push(newDog);
-     this.salvar;
+     this.salvar();
   },
 
   vacinar:function(id, dadosVacina) {
@@ -70,9 +70,7 @@ let funcoes = {
   remover: function remover(id) {
     let dadosDoCachorro = this.buscar(id);
     if(dadosDoCachorro.id){
-      let index = cachorros.findIndex(function(cachorros){
-      return cachorros;
-      })
+      let index = cachorros.findIndex(cachorro => cachorro == dadosDoCachorro);
       cachorros.splice(index,1 );
         this.salvar();
     } else {
