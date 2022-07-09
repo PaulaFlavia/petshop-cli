@@ -67,7 +67,7 @@ let funcoes = {
     }
   },
 
-  remover: function remover(id) {
+  remover: function (id) {
     let dadosDoCachorro = this.buscar(id);
     if(dadosDoCachorro.id){
       let index = cachorros.findIndex(cachorro => cachorro == dadosDoCachorro);
