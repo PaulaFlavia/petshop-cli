@@ -1,6 +1,5 @@
 
 const cachorros = require('./database/cachorros.json');
-
 const fs = require('fs');
 const path = require('path');
 
@@ -28,7 +27,7 @@ let funcoes = {
     console.table(cachorros);
   },
 
-  descrever:function(id) {
+  descrever: function(id) {
     let cachorro = this.buscar(id);  
   
     if(cachorro) {
@@ -67,7 +66,7 @@ let funcoes = {
     }
   },
 
-  remover: function (id) {
+  remover: function(id) {
     let dadosDoCachorro = this.buscar(id);
     if(dadosDoCachorro.id){
       let index = cachorros.findIndex(cachorro => cachorro == dadosDoCachorro);
